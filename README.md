@@ -6,10 +6,10 @@ The operations in the library is intended to replace the operations in [NEUROPHO
 Currently supported operations:
 
 ```python
-tqdnn.cc_mul
+tqdnn.cc_mul(...)
+tqdnn.rc_mul(...)
+tqdnn.s_mul(...)
 ```
-
-More operations is on the way ...
 
 ## Installation
 
@@ -19,7 +19,7 @@ More operations is on the way ...
 
 ## Usage
 
-Replace the operations in the file [neurophox/neurophox/torch/generic.py](https://github.com/solgaardlab/neurophox/blob/61fb6f78441176ff8e82a41fcd3e7778b0809e99/neurophox/torch/generic.py) with the ones provided in our library.
+Replace the operations in the file [neurophox/neurophox/torch/generic.py](https://github.com/solgaardlab/neurophox/blob/61fb6f78441176ff8e82a41fcd3e7778b0809e99/neurophox/torch/generic.py) with the ones provided in this library.
 
 For example, replace the following `cc_mul`
 
@@ -38,5 +38,9 @@ arg0 = ...
 arg1 = ...
 tqdnn.cc_mul(arg0, arg1)
 ```
+
+## Testing
+
+`cd QZone-DNN/ & pytest -s .`
 
 That's it!
