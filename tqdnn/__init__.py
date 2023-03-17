@@ -1,1 +1,1 @@
-from tqdnn.tqdnn import cc_mul
+from tqdnn.tqdnn import cc_mul, rc_mul, s_mul
